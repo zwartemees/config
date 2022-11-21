@@ -1,3 +1,6 @@
 # My config 
- | wm: | hyprland |
+## Used Packages:
+ | function | name | 
  | --- | ---|
+ | wm: | hyprland |
+
