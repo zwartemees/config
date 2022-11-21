@@ -1,1 +1,2 @@
-# config
+# My config 
+| wm: | hyprland |
