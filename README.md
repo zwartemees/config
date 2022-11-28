@@ -3,4 +3,5 @@
  | function | name | 
  | --- | ---|
  | wm: | hyprland |
-
+ | network | networkmanager_dmenu |
+ | | rofi |
