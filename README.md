@@ -20,11 +20,13 @@ eddit grubenteries in /boot/grub/grub.cfg (this wil be wiped when grub updates)
 
 
 ## GNOME-controle-center
+````terminal
 sudo chmod  640 /usr/share/spplications/gnome-*-panel.desktop
 sudo chmod  777 /usr/share/applications/gnome-diagnostics-panel.desktop
 sudo chmod  777 /usr/share/applications/gnome-firmware-security-panel.desktop
 sudo chmod  777 /usr/share/applications/gnome-wacom-panel.desktop
 sudo chmod  777 /usr/share/applications/gnome-wwan-panel.desktop
 sudo chmod  777 /usr/share/applications/gnome-wifi-panel.desktop
+````
 and maby 
 sudo chmod  777 /usr/share/applications/gnome-bluetooth-panel.desktop
