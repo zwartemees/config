@@ -6,11 +6,12 @@
  | network | gnome-control-center |
  | | rofi |
  | login manager | sddm | 
+ 
  ````terminal
  yay -S multicolor-sddm-theme otf-font-awesome otf-raleway
  ````
- sddm/default.conf to /usr/lib/sddm/sddm.conf.d/default.conf install multicolor-sddm-theme otf-font-awesome otf-raleway (in yay)
- 
+ sddm/default.conf to /usr/lib/sddm/sddm.conf.d/default.conf
+
  ## add cursor theme change color sceem
  grub/grub naar /etc/default/grub
  dan sudo grub-mkconfig -o /boot/grub/grub.cfg
@@ -28,5 +29,10 @@ sudo chmod  777 /usr/share/applications/gnome-wacom-panel.desktop
 sudo chmod  777 /usr/share/applications/gnome-wwan-panel.desktop
 sudo chmod  777 /usr/share/applications/gnome-wifi-panel.desktop
 ````
-and maby 
+## maby?
+````terminal
 sudo chmod  777 /usr/share/applications/gnome-bluetooth-panel.desktop
+sudo systemctl enable --now bluetooth
+````
+
+
