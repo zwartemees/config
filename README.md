@@ -34,5 +34,18 @@ sudo chmod  777 /usr/share/applications/gnome-wifi-panel.desktop
 sudo chmod  777 /usr/share/applications/gnome-bluetooth-panel.desktop
 sudo systemctl enable --now bluetooth
 ````
+## wallpaper
+using https://github.com/Horus645/swww
+````terminal
+chmod +x .config/wallpaper/swww
+chmod +x .config/wallpaper/swww-deamon
+export PATH=$PATH:.config/wallpaper
+swww init
+````
+
+using https://github.com/hexive/sunpaper
+`````terminal
+./.config/sunpaper/sunpaper.sh
+sunpaper.sh -d
 
 
