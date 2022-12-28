@@ -1,1 +1,0 @@
-/home/mees/Downloads/swww/target/release/swww: /home/mees/Downloads/swww/build.rs /home/mees/Downloads/swww/src/cli.rs /home/mees/Downloads/swww/src/main.rs /home/mees/Downloads/swww/utils/src/communication.rs /home/mees/Downloads/swww/utils/src/comp_decomp.rs /home/mees/Downloads/swww/utils/src/lib.rs
