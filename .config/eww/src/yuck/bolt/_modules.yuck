@@ -45,7 +45,8 @@
        :style "background-image: radial-gradient(circle farthest-side at bottom, rgba(23, 28, 33, 0.7) 100%), url(\"${pctl_sub['mpris:artUrl']}\")"
        :width 200
        :height 200
-    (box :space-evenly false 
+    (box  
+         :space-evenly false 
          :orientation "vertical" 
          :class "bolt-pctl-label-title-artist"
       (label :halign "start" 
