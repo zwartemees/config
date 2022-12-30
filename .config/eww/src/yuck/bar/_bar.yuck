@@ -63,7 +63,7 @@
 
 ;; ━━━ MEMORY ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 (defwidget dashbutton[]
-  (button :class "reg-btn dashbutton" :onclick "./src/shell/bar/disclose.sh" "舘")
+  (button :class "reg-btn dashbutton":onrightclick "./src/shell/bar/avatar.sh" :onclick "./src/shell/bar/disclose.sh" "舘")
 )
 
 
@@ -89,8 +89,9 @@
                         :thickness {thickness}
                         :start-at 75
 
-      (label :class "iconcpu" :text {icon})
-    )
+      (label :class "iconcpu" :text {icon}))
+      
+    
   )
 )
 
@@ -199,7 +200,7 @@
 (defwidget powerbutton []
   (eventbox :cursor "hand"
   (button		:class "reg-btn powerbutton"
-                :onclick "eww open powermenu --toggle &"	"")
+                :onclick "shutdown now"	"")
   )
 )
                                                   (defwidget powermenucontent []

@@ -1,11 +1,11 @@
 #!/bin/bash
 FOLDER="$HOME/Downloads/vile"
-FILE="$HOME/.cache/eww/disclose.xyz"
+FILE="$HOME/.cache/eww/avatar.xyz"
 if test -f "$FILE"; then
 	rm "$FILE"
-	eww -c $FOLDER close disclose
-else
 	eww -c $FOLDER close avatar
-	eww -c $FOLDER open disclose
+else
+	eww -c $FOLDER open avatar
+	eww -c $FOLDER close disclose
 	touch "$FILE"
 fi

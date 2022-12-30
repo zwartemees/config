@@ -10,7 +10,7 @@
              :halign "start"
              :hexpand true)
       (button :onclick "./src/shell/combine.bash cls" :class "disclose-headers-clear" "")
-      (button :onclick "eww close disclose" :class "disclose-headers-close" "署"))
+      (button :onclick "eww close -c . disclose" :class "disclose-headers-close" "署"))
     (scroll :hscroll false
             :vscroll true
             :vexpand true

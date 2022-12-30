@@ -1,11 +1,12 @@
 (include "./src/yuck/bolt/_modules.yuck")
 (include "./src/yuck/bolt/_layout.yuck")
 
-(defwindow bolt :stacking "bg"
+(defwindow bolt 
+  :stacking "fg"
   :monitor 0
-  :windowtype "normal"
   :wm-ignore true
-  :geometry (geometry :x 90 :y -15 :width "23%" :height "30%" :anchor "left bottom") 
+  :windowtype "normal"
+  :geometry (geometry :x "15px" :y "-500px" :width "23%" :height "30%" :anchor "center center") 
   (bolt_layout))
 
 ;; vim:ft=yuck

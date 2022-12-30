@@ -2,7 +2,7 @@
 (include "./src/yuck/chrono/_modules.yuck")
 (include "./src/yuck/chrono/_layout.yuck")
 
-(defwindow chrono :stacking "bg"
+(defwindow chrono :stacking "fg"
   :monitor 0
   :windowtype "normal"
   :wm-ignore true
