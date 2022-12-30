@@ -239,7 +239,7 @@
   :wm-ignore true
   (powermenucontent))
 
-(deflisten workspaces_listen "../../shell/bar/workspaces.sh")
+(deflisten workspaces_listen "./src/shell/bar/workspaces.sh")
 (defwidget workspaces []
   (literal :content workspaces_listen))
 
@@ -263,5 +263,3 @@
   :anchor "top left")
   :stacking "fg"
   (bar))
-
-; vim:filetype=yuck
