@@ -1,21 +1,20 @@
-@import "src/scss/variables";
-@import "src/scss/overrides";
+@import "./themes/auto.scss";
+@import "./src/scss/_base.scss";
 
-@import "src/scss/bar/index.scss";
-@import "src/scss/bar/widgets/calendar";
-@import "src/scss/bar/widgets/launcher";
-@import "src/scss/bar/widgets/browser";
-@import "src/scss/bar/widgets/terminal";
-@import "src/scss/bar/widgets/chat";
-@import "src/scss/bar/widgets/rofi";
-@import "src/scss/bar/widgets/powermenu";
-@import "src/scss/bar/widgets/systray";
-@import "src/scss/bar/widgets/time";
-@import "src/scss/bar/widgets/workspaces";
-@import "src/scss/bar/widgets/vpn";
+@import "./src/scss/bar/_bar.scss";
+@import "./src/scss/avatar/_init.scss";
+@import "./src/scss/disclose/_init.scss";
+@import "./src/scss/vertigo/_init.scss";
+@import "./src/scss/ocular/_init.scss";
+@import "./src/scss/lumin/_init.scss";
+@import "./src/scss/melody/_init.scss";
+@import "./src/scss/origin/_init.scss";
+@import "./src/scss/horizon/_init.scss";
+@import "./src/scss/clime/_init.scss";
+@import "./src/scss/power/_init.scss";
+@import "./src/scss/chrono/_init.scss";
+@import "./src/scss/bolt/_init.scss";
 
-@import "src/scss/lock/index.scss";
+@import "./src/scss/_override.scss"
 
-@import "src/scss/widgets/layouts";
-
-@import "src/scss/config";
+// vim:ft=scss

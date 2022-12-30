@@ -1,10 +1,17 @@
-;; NOTE: This is only for 1366x768 resolution! Use at your own risk.
+(include "./src/yuck/_env.yuck")
+(include "./src/yuck/_lib.yuck")
 
-(include "./src/yuck/_variables.yuck")
+(include "./src/yuck/bar/_bar.yuck")
+;;(include "./src/yuck/vertigo/_init.yuck")
+(include "./src/yuck/disclose/_init.yuck")
+(include "./src/yuck/avatar/_init.yuck")
+(include "./src/yuck/melody/_init.yuck")
+(include "./src/yuck/lumin/_init.yuck")
+(include "./src/yuck/origin/_init.yuck")
+(include "./src/yuck/ocular/_init.yuck")
+(include "./src/yuck/clime/_init.yuck")
+(include "./src/yuck/power/_init.yuck")
+(include "./src/yuck/chrono/_init.yuck")
+(include "./src/yuck/bolt/_init.yuck")
 
-(include "./src/yuck/bar/_definitions.yuck")
-(include "./src/yuck/bar/_widgets.yuck")
-(include "./src/yuck/lock/_definitions.yuck")
-(include "./src/yuck/lock/_widgets.yuck")
-(include "./src/yuck/widgets/_definitions.yuck")
-(include "./src/yuck/widgets/_widgets.yuck")
+; vim:filetype=yuck
