@@ -16,12 +16,17 @@ $light-gray: $shade08;
 
 .icon {
     font-family: monospace;
-    font-size: 1.4rem;
+    font-size: 8em;
 }
 
 
+
 button {
+
     transition: background-color 200ms, color 200ms;
+}
+.settings {
+	color:$base;
 }
 
 .active {
@@ -30,7 +35,7 @@ button {
 }
 
 .inactive {
-    color: $base;
+    color: $green;
     font-size: 1.4rem;
 }
 
@@ -40,7 +45,6 @@ button {
 
 .bar {
     background-color: $mantle;
-    border-left: 4px dotted $red;
 }
 
 .dashboard {
@@ -65,7 +69,7 @@ button {
     }
 
     calendar.header {
-        color: $blue;
+        color: $mantle;
         font-weight: bold;
     }
 
@@ -185,6 +189,8 @@ button {
     font-size: 2rem;
     margin: 2px 8px;
     border-radius: 10px;
+    margin-left: 4px;
+   margin-right: 0px;
 }
 
 .dashbutton {
@@ -201,7 +207,7 @@ button {
 }
 
 .powerbutton { 
-    color: $red; 
+    color: $red;
 }
 
 .powerbutton:hover {
@@ -211,7 +217,7 @@ button {
 .powerbutton:active {
     background-color: $red;
     color: $mantle;
-}
+}}
 
 .launchbutton { 
     background-color: $blue; 
