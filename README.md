@@ -52,4 +52,4 @@ using https://github.com/hexive/sunpaper
 ./.config/sunpaper/sunpaper.sh
 sunpaper.sh -d
 
-
+install https://github.com/SapuSeven/rofi-presets for rofi
