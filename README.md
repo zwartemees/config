@@ -51,5 +51,7 @@ using https://github.com/hexive/sunpaper
 `````terminal
 ./.config/sunpaper/sunpaper.sh
 sunpaper.sh -d
+````
 
 install https://github.com/SapuSeven/rofi-presets for rofi
+ZSH_THEME="sorin"
