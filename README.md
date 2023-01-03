@@ -8,7 +8,7 @@
  | login manager | sddm | 
  
  ````terminal
- yay -S multicolor-sddm-theme otf-font-awesome otf-raleway sunwait 
+ yay -S multicolor-sddm-theme otf-font-awesome otf-raleway sunwait hyprland kitty gnome-control-center
  ````
  sddm/default.conf to /usr/lib/sddm/sddm.conf.d/default.conf
 
