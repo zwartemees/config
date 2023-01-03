@@ -8,10 +8,18 @@
  | login manager | sddm | 
  
  ````terminal
- yay -S multicolor-sddm-theme otf-font-awesome otf-raleway sunwait hyprland kitty gnome-control-center sddm
+ yay -S  otf-font-awesome otf-raleway sunwait hyprland kitty gnome-control-center sddm neovim eww-wayland firefox
  ````
- sddm/default.conf to /usr/lib/sddm/sddm.conf.d/default.conf
+ ## sddm theme
+`````terminal
+ git clone https://gitlab.com/dwt1/multicolor-sddm-theme
+ sudo cp -r multicolor-sddm-theme/ /usr/share/sddm/themes/
+ sed 's/.*Current=.*/Current=multicolor-sddm-theme/' /usr/lib/sddm/sddm.conf.d/default.conf> /usr/lib/sddm/sddm.conf.d/default.conf
+ sed 's/.*background=.*/background=png/dracula-01.png/' /usr/share/sddm/themes/multicolor-sddm-theme/theme.conf> /usr/share/sddm/themes/multicolor-sddm-theme/theme.conf
  systemctl enable sddm
+````
+ 
+ 
 
  ## add cursor theme change color sceem
  grub/grub naar /etc/default/grub
