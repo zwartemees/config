@@ -1,5 +1,5 @@
 #!/bin/bash
-FOLDER="$HOME/Downloads/vile"
+FOLDER="$HOME/.config/eww"
 FILE="$HOME/.cache/eww/bolt.xyz"
 if test -f "$FILE"; then
 	rm "$FILE"

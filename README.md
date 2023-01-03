@@ -8,7 +8,7 @@
  | login manager | sddm | 
  
  ````terminal
- yay -S multicolor-sddm-theme otf-font-awesome otf-raleway sunwait 
+ yay -S multicolor-sddm-theme otf-font-awesome otf-raleway sunwait oh-my-zsh-git
  ````
  sddm/default.conf to /usr/lib/sddm/sddm.conf.d/default.conf
 
@@ -52,6 +52,15 @@ using https://github.com/hexive/sunpaper
 ./.config/sunpaper/sunpaper.sh
 sunpaper.sh -d
 ````
-
+##rofi
 install https://github.com/SapuSeven/rofi-presets for rofi
-ZSH_THEME="sorin"
+
+##oh-my-zsh
+install https://github.com/catppuccin/zsh-syntax-highlighting
+
+
+```terminal
+mv .zshrc ~/
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+$ sudo git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
