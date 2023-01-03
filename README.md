@@ -65,8 +65,10 @@ using an adapted and pre configured version of https://github.com/hexive/sunpape
 ./.config/sunpaper/sunpaper.sh
 sunpaper.sh -d
 `````
-
+## eww bar
 install https://github.com/SapuSeven/rofi-presets for rofi
+
+## zsh
 ZSH_THEME="sorin"
 
 ## maby? not working !!
