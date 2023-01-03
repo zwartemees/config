@@ -8,9 +8,10 @@
  | login manager | sddm | 
  
  ````terminal
- yay -S multicolor-sddm-theme otf-font-awesome otf-raleway sunwait hyprland kitty gnome-control-center
+ yay -S multicolor-sddm-theme otf-font-awesome otf-raleway sunwait hyprland kitty gnome-control-center sddm
  ````
  sddm/default.conf to /usr/lib/sddm/sddm.conf.d/default.conf
+ systemctl enable sddm
 
  ## add cursor theme change color sceem
  grub/grub naar /etc/default/grub
