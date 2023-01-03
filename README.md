@@ -11,7 +11,7 @@
  yay -S  otf-font-awesome otf-raleway sunwait hyprland kitty gnome-control-center sddm neovim eww-wayland firefox
  ````
  ## sddm theme
-`````terminal
+````terminal
  git clone https://gitlab.com/dwt1/multicolor-sddm-theme
  sudo cp -r multicolor-sddm-theme/ /usr/share/sddm/themes/
  sed 's/.*Current=.*/Current=multicolor-sddm-theme/' /usr/lib/sddm/sddm.conf.d/default.conf> /usr/lib/sddm/sddm.conf.d/default.conf
