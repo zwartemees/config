@@ -1,14 +1,8 @@
 # My config 
-## Used Packages:
- | function | name | 
- | --- | ---|
- | wm: | hyprland |
- | network | gnome-control-center |
- | | rofi |
- | login manager | sddm | 
- 
+
+## Used Packages: 
  ````terminal
- yay -S  otf-font-awesome otf-raleway sunwait hyprland kitty gnome-control-center sddm neovim eww-wayland firefox python python-pip oh-my-zsh
+ yay -S  otf-font-awesome otf-raleway sunwait hyprland kitty gnome-control-center sddm neovim eww-wayland firefox python python-pip oh-my-zsh cargo sunwait
  ````
  ## sddm theme
 ````terminal
@@ -18,18 +12,15 @@
  sed 's/.*background=.*/background=png/dracula-01.png/' /usr/share/sddm/themes/multicolor-sddm-theme/theme.conf> /usr/share/sddm/themes/multicolor-sddm-theme/theme.conf
  systemctl enable sddm
 ````
- 
- 
-
 ## grub theme
 ````terminal
 sudo grub-mkconfig -o /boot/grub/grub.cfg # detects boot entry's 
 git clone https://github.com/mateosss/matter.git
-./matter.py
+sudo ./matter/matter.py
 ````
 pick boot entry icons from https://materialdesignicons.com/
 ````terminal
-sudo ./matter -i arch linux microsoft cog #appropriate icons here in my case arch linux etc.
+sudo ./matter/matter -i arch linux microsoft cog #appropriate icons here in my case arch linux etc.
 sudo grub-mkconfig -o /boot/grub/grub.cfg #makes the config
 ````
 eddit grubenteries in /boot/grub/grub.cfg (this wil be wiped when grub updates) 
@@ -51,10 +42,11 @@ using https://github.com/Horus645/swww
 
 ````terminal
 git clone https://github.com/Horus645/swww.git
-cs swww
+cd swww
 cargo build --release
-mv swww/target/release/* .config/wallpaper/
 cd ..
+mkdir .config/wallpaper/
+mv swww/target/release/* .config/wallpaper/
 rm -rf swww
 export PATH=$PATH:.config/wallpaper
 swww init
@@ -65,9 +57,23 @@ using an adapted and pre configured version of https://github.com/hexive/sunpape
 ./.config/sunpaper/sunpaper.sh
 sunpaper.sh -d
 `````
-## eww bar
-install https://github.com/SapuSeven/rofi-presets for rofi
+## eww 
+bar using rofi configs from https://github.com/SapuSeven/rofi-presets
+ewwL 
+config of the bar (made worse by yours truly): https://github.com/notusknot/dotfiles-nix 
+config of the widgets (just stolen): https://github.com/dharmx/vile 
 
+## NOTES!!!
+the icons from the bar are not working
+open .config/eww/src/yuck/bar/_bar.yuck and replace the icons 
+drop:
+menu:
+cog:
+````terminal
+git clone --depth=1 https://github.com/adi1090x/rofi.git
+chmod +x rofi/setup.sh
+./rofi/setup.sh
+````
 ## zsh
 ZSH_THEME="sorin"
 
